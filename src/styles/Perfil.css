@@ -1,0 +1,126 @@
+/* 🎨 Contenedor principal */
+.profile-container {
+  background: #f4f4f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🟦 Caja del perfil */
+.profile-box {
+  width: 450px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* 📢 Título */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* 🖼 Imagen de perfil */
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* ✏ Botón de edición */
+.edit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+/* 📝 Formulario de edición */
+.edit-form {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.edit-form label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+/* 📝 Campos de entrada */
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* ✅ Botón Guardar */
+.save-button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+/* 📃 Lista de servicios */
+.services-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.services-list li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* 📱 Diseño responsive */
+@media (max-width: 600px) {
+  .profile-box {
+    width: 90%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+    background: linear-gradient(90deg, #0e0f10ec, #696b6b);
+    text-align: center;
+    padding: 4px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .copyright {
+    color: white;
+    font-size: 25px;
+
+
+
+}

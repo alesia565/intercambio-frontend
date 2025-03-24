@@ -1,0 +1,89 @@
+/* 🎨 Fondo blanco limpio */
+.page-container {
+  background: #f9f9f9; /* Fondo ligeramente gris para suavizar */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🟦 Contenedor del formulario con sombra y bordes suaves */
+.form-container {
+  width: 450px;
+  padding: 30px;
+  background: #ffffff; /* Fondo blanco puro */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil para elevar el contenedor */
+  border-radius: 12px; /* Bordes suaves */
+  text-align: center;
+}
+
+/* 📢 Título */
+h2 {
+  font-size: 24px !important;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* 🏷️ Etiquetas */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  color: #555;
+  text-align: left;
+}
+
+/* 📝 Campos de entrada */
+input,
+textarea,
+select {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f8f8f8;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ✨ Efecto en campos al hacer focus */
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #007bff;
+  background-color: #ffffff;
+  outline: none;
+}
+
+/* 🔵 Botón */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+  transition: background 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+/* 🚀 Hover del botón */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* 📱 Diseño responsive */
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+/* 🎨 Fondo con un tono claro y limpio */
+.register-container {
+  background: #f4f4f9; /* Un gris muy claro */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 🟦 Contenedor del formulario con sombra y bordes redondeados */
+.register-box {
+  width: 400px;
+  padding: 30px;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* 📢 Título */
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* 🚨 Mensajes de error o éxito */
+.error-message {
+  color: #ff4d4d;
+  background: #ffe5e5;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.success-message {
+  color: #28a745;
+  background: #d4edda;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* 🏷️ Etiquetas */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  text-align: left;
+}
+
+/* 📝 Campos de entrada */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: 0.3s ease-in-out;
+}
+
+/* ✨ Efecto en inputs al hacer focus */
+.input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #fff;
+}
+
+/* 🔵 Botón de registro */
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* 🚀 Hover del botón */
+.register-button:hover {
+  background: #0056b3;
+}
+
+/* 📱 Diseño responsive */
+@media (max-width: 600px) {
+  .register-box {
+    width: 90%;
+    padding: 20px;
+  }
+}
