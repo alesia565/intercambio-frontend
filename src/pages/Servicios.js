@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import '../styles/Servicios.css';
-
 
 const Servicios = () => {
   const [services, setServices] = useState([]);
@@ -10,18 +8,30 @@ const Servicios = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Verifica la sesión del usuario
+    // Verificar sesión
     fetch('http://localhost:5000/check-session', {
       credentials: 'include',
     })
-      .then(res => res.json())
-      .then(data => {
-        if (data.authenticated) {
-          setUserId(data.user_id);
+      .then(async (res) => {
+        if (!res.ok) {
+          console.warn("❌ Sesión no válida:", res.status);
+          return null;
         }
+        return res.json();
+      })
+      .then((data) => {
+        if (data && data.authenticated) {
+          console.log("✅ Sesión activa:", data.user_id);
+          setUserId(data.user_id);
+        } else {
+          console.warn("⚠️ No se pudo verificar sesión");
+        }
+      })
+      .catch((err) => {
+        console.error("❌ Error al verificar sesión:", err);
       });
 
-    // Carga los servicios
+    // Cargar servicios
     fetch('http://localhost:5000/api/services', {
       method: 'GET',
       credentials: 'include',
@@ -65,7 +75,9 @@ const Servicios = () => {
                   className="service-image"
                 />
               )}
-              <h3>{service.title}</h3>
+              <Link to={`/servicio/${service.id}`} className="service-link">
+                <h3>{service.title}</h3>
+              </Link>
               <p>{service.description}</p>
               {service.user_id === userId && (
                 <div className="buttons">

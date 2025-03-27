@@ -1,0 +1,56 @@
+.notificaciones-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notificaciones-container h2 {
+    font-size: 3rem !important;
+    margin-bottom: 20px;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .notificaciones-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notificaciones-container li {
+    padding: 15px 20px;
+    border-left: 6px solid transparent;
+    background-color: #f9f9f9;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .notificaciones-container li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Nueva notificación */
+  .nueva {
+    border-left-color: #007bff;
+    background-color: #eaf4ff;
+    font-weight: bold;
+  }
+  
+  /* Notificación leída */
+  .leida {
+    border-left-color: #ccc;
+    color: #555;
+  }
+  
+  .notificaciones-container li small {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }

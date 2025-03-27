@@ -98,6 +98,15 @@ label {
   background: #0056b3;
 }
 
+.service-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-link:hover {
+  color: #3498db;
+}
+
 /* 📱 Diseño responsive */
 @media (max-width: 600px) {
   .register-box {

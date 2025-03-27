@@ -71,3 +71,8 @@
   color: #00e676;
   text-shadow: 0 0 8px #00e676;
 }
+
+.noti-alerta {
+  font-weight: bold;
+  color: red;
+}

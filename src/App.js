@@ -9,6 +9,10 @@ import Perfil from './pages/Perfil';
 import PublicarServicio from './pages/PublicarServicio';
 import Servicios from './pages/Servicios';
 import EditarServicio from './pages/EditarServicio';
+import DetalleServicio from './pages/DetalleServicio';
+import OfertasRecibidas from './pages/OfertasRecibidas';
+import Notificaciones from './components/Notificaciones';
+import '../src/styles/App.css';
 
 function App() {
   const [user, setUser] = useState(null);
@@ -25,7 +29,7 @@ function App() {
       .then(response => response.json())
       .then(data => {
         if (data.authenticated) {
-          setUser({ id: data.user_id }); // Al menos asignamos un objeto
+          setUser({ id: data.user_id }); 
         }
       })
       .catch(error => console.error("Error:", error));
@@ -46,6 +50,9 @@ function App() {
             <Route path="/publicar-servicio" element={<PublicarServicio />} />
             <Route path="/servicios" element={<Servicios />} />
             <Route path="/editar-servicio/:id" element={<EditarServicio />} />
+            <Route path="/servicio/:id" element={<DetalleServicio />} />
+            <Route path="/ofertas-recibidas" element={<OfertasRecibidas />} />
+            <Route path="/notificaciones" element={<Notificaciones />} />
           </Routes>
         </div>
         <Footer />

@@ -131,7 +131,7 @@ p1 {
 
 /* Título de servicios populares */
 .services-preview h3 {
-  font-size: 3rem; /* Más grande y llamativo */
+  font-size: 3rem;
   color: #00796b;
   font-weight: bold;
   text-transform: uppercase;

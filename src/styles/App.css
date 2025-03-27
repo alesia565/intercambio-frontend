@@ -1,0 +1,26 @@
+/* Asegura que el layout ocupe toda la altura de la ventana */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Layout general del app */
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* El contenido se expande y empuja el footer hacia abajo */
+  .content {
+    flex: 1;
+  }
+  
+  /* Footer al final */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+  }
